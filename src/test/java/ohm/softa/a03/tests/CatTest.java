@@ -65,6 +65,7 @@ public class CatTest {
 		animal.feed();
 		//Waiting while animal is digesting and in playful mood
 		IntStream.range(0, Awake).forEach(i -> animal.tick());
+		System.out.println(animal.getState());
 		assertTrue(animal.isAsleep());
 	}
 }
